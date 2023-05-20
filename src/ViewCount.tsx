@@ -1,13 +1,19 @@
 /* eslint-disable no-console */
 import './ViewCount.css'
-import Nullstack, { NullstackClientContext } from 'nullstack'
+import Nullstack, {
+  NullstackClientContext,
+  NullstackServerContext,
+} from 'nullstack'
+
+import { isRealUser } from './utils'
 
 class ViewCount extends Nullstack {
 
   static serverViewCount = 0
   viewCount: number
 
-  static async addViewCount() {
+  static async addViewCount(context?: NullstackServerContext) {
+    if (!isRealUser(context)) return this.serverViewCount
     console.log(`serverViewCount: ${this.serverViewCount + 1}`)
     return ++this.serverViewCount
   }

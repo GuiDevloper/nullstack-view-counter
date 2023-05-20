@@ -14,6 +14,8 @@ This example caches the root page `/`, and also checks the user-agent from reque
 
 - In **src/ViewCount.tsx** the logic happens. A server variable stores the count - Without the above caching, the initial goes wrong, pressing `Sync with server` shows how the server got hit twice.
 
+- In **src/utils.ts** there's a method to check if the user agent isn't among known bots, blocking the server count for them.
+
 ## How to run this project
 
 1. Install the dependencies: `npm install`
