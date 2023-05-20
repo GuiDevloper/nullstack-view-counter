@@ -32,6 +32,8 @@ npm run build && node .production/server.js
 
 6. Check the terminal and view.
 
+> :bulb: Vercel Serverless instances does have a temporary state being a good environment to test this behavior in production and storing logs.
+
 ## Learn more
 
 [Read Nullstack documentation](https://nullstack.app/documentation)
