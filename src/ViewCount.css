@@ -2,10 +2,8 @@ section {
   width: 100%;
   max-width: 800px;
   min-height: 100vh;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 1.5em;
+  flex-direction: column;
 }

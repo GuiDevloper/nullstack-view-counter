@@ -12,6 +12,8 @@ This example caches the root page `/`, and also checks the user-agent from reque
 
 - In **server.ts** all `get` requests are intercepted and cached for 3s (enough for worker) - Comment line 11 for the initial request double-run again.
 
+- In **src/ViewCount.tsx** the logic happens. A server variable stores the count - Without the above caching, the initial goes wrong, pressing `Sync with server` shows how the server got hit twice.
+
 ## How to run this project
 
 1. Install the dependencies: `npm install`

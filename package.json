@@ -1,7 +1,7 @@
 {
   "name": "nullstack-view-counter",
   "version": "0.0.1",
-  "description": "Nullstack example of avoiding requests from non-user sources",
+  "description": "Nullstack example of counting views and avoiding requests from non-user sources",
   "author": "GuiDevloper",
   "license": "ISC",
   "dependencies": {
