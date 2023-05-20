@@ -13,4 +13,7 @@ context.server.get('/', (_req, res, next) => {
   next()
 })
 
+// experiment enforcing "stale" behavior of service-worker for `/`
+context.worker.staleWhileRevalidate = [/\//]
+
 export default context

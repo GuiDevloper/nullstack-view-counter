@@ -10,7 +10,7 @@ Also many bots (like VercelBot) requests the page, making more runs (and logs).
 
 This example caches the root page `/`, and also checks the user-agent from requests, trying to count only real users visits.
 
-- In **server.ts** all `get` requests are intercepted and cached for 3s (enough for worker) - Comment line 11 for the initial request double-run again.
+- In **server.ts** all `get` requests are intercepted and cached for 3s (enough for worker) - Comment line 12 for the initial request double-run again.
 
 - In **src/ViewCount.tsx** the logic happens. A server variable stores the count - Without the above caching, the initial goes wrong, pressing `Sync with server` shows how the server got hit twice.
 
