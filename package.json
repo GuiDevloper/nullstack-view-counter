@@ -1,0 +1,14 @@
+{
+  "name": "nullstack-view-counter",
+  "version": "0.0.1",
+  "description": "Nullstack example of avoiding requests from non-user sources",
+  "author": "GuiDevloper",
+  "license": "ISC",
+  "dependencies": {
+    "nullstack": "github:GuiDevloper/nullstack#resolve-pnpm"
+  },
+  "scripts": {
+    "start": "nullstack start",
+    "build": "nullstack build"
+  }
+}
