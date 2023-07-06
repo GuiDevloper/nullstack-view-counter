@@ -2,6 +2,7 @@ import { NullstackServerContext } from 'nullstack'
 
 const botAgents = [
   'Vercelbot',
+  'Discordbot',
   'HeadlessChrome',
   'https://github.com/sindresorhus/got',
 ]
