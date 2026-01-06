@@ -22,12 +22,13 @@ class ViewCount extends Nullstack {
     this.viewCount = await ViewCount.addViewCount()
   }
 
-  static async getViewCount() {
+  static async getViewCount(ctx = {}) {
     return this.serverViewCount
   }
 
   async syncWithServer() {
-    this.viewCount = await ViewCount.getViewCount()
+    const init_rand = Math.round(Math.random() * 100)
+    this.viewCount = await ViewCount.getViewCount({ init_rand })
   }
 
   render(_context: NullstackClientContext) {
